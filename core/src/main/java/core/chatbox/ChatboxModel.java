@@ -4,5 +4,4 @@ public class ChatboxModel {
 	
 	public Transmitter transmitter;
 	public String text;
-
 }

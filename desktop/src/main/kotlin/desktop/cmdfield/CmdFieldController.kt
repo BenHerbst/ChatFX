@@ -13,10 +13,11 @@ class CmdFieldController : Controller(){
 	fun queryCommand(command: String) {
 		val conservation = core.Query.takeQuery(command)
 		// Create chatboxes from consrvation
-		val userChatboxFragment = ChatboxFragment()
-		val botChatboxFragment = ChatboxFragment()
+		val userChatboxFragment = ChatboxFragment(conservation.userChatbox)
+		val botChatboxFragment = ChatboxFragment(conservation.botChatbox)
 		// Add chatboxes to chat
 		chatarea.root.children.add(userChatboxFragment.root)
+		chatarea.root.children.add(botChatboxFragment.root)
 		// Clear the text field
 		view.queryProperty.set("")
 	}
