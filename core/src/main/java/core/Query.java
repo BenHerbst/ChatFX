@@ -11,9 +11,18 @@ public class Query {
 			switch (commands[1]) {
 			case "duckduckgo":
 				Browser.openWithLink("https://duckduckgo.com");
+				break;
 			case "google":
 				Browser.openWithLink("https://google.com");
+				break;
+			case "browser":
+				Browser.openWithLink("https://github.com/BenHerbst/ChatFX");
+				break;
 			}
+			break;
+		case "search":
+			Browser.searchWithDDG(query.replace("search", ""));
+			break;
 		}
 	}
 }

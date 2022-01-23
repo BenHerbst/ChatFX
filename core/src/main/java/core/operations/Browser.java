@@ -6,6 +6,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class Browser {
+	// Duckduckgo search query link
+	static String ddgSearchQuery = "https://duckduckgo.com/?q=";
+
 	public static void openWithURI(URI uri) {
 		try {
 			// Opens the default browser with the given uri
@@ -23,5 +26,10 @@ public class Browser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	// Search via the duckduckgo search query
+	public static void searchWithDDG(String search) {
+		openWithLink(ddgSearchQuery + search.replace(" ", "+"));
 	}
 }
