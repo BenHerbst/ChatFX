@@ -1,9 +1,6 @@
 package core;
 
-import java.awt.Desktop;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import core.operations.Browser;
 
 public class Query {
 	public static void takeQuery(String query) {
@@ -12,17 +9,11 @@ public class Query {
 		switch (commands[0]) {
 		case "open":
 			switch (commands[1]) {
-			case "browser":
-				try {
-					// Open the default browser with duckduckgo
-					Desktop.getDesktop().browse(new URI("https://duckduckgo.com/"));
-				} catch (IOException e) {
-					e.printStackTrace();
-				} catch (URISyntaxException e) {
-					e.printStackTrace();
-				}
+			case "duckduckgo":
+				Browser.openWithLink("https://duckduckgo.com");
+			case "google":
+				Browser.openWithLink("https://google.com");
 			}
 		}
-
 	}
 }
