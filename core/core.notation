@@ -299,15 +299,19 @@
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_Z5ut8H00EeynFtvtIKas0g" type="ControlFlow_Edge" source="_UTUfEH00EeynFtvtIKas0g" target="_KSMN0H0zEeynFtvtIKas0g">
     <children xmi:type="notation:DecorationNode" xmi:id="_Z5ut8300EeynFtvtIKas0g" type="ControlFlow_NameLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut9H00EeynFtvtIKas0g" x="-56" y="27"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_qKBasH02EeynFtvtIKas0g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut9H00EeynFtvtIKas0g" x="-87" y="27"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_Z5ut9X00EeynFtvtIKas0g" type="ControlFlow_WeightLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_qKKkoH02EeynFtvtIKas0g" name="IS_UPDATED_POSITION" booleanValue="true"/>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut9n00EeynFtvtIKas0g" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_Z5ut9300EeynFtvtIKas0g" type="ControlFlow_GuardLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut-H00EeynFtvtIKas0g" y="20"/>
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_qKTukH02EeynFtvtIKas0g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut-H00EeynFtvtIKas0g" x="30" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_Z5ut-X00EeynFtvtIKas0g" type="ControlFlow_StereotypeLabel">
+      <styles xmi:type="notation:BooleanValueStyle" xmi:id="_qKdfkH02EeynFtvtIKas0g" name="IS_UPDATED_POSITION" booleanValue="true"/>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_Z5ut-n00EeynFtvtIKas0g" y="-20"/>
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_Z5ut8X00EeynFtvtIKas0g"/>
