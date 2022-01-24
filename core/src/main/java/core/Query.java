@@ -17,6 +17,9 @@ public class Query {
 		if (query.toLowerCase().equals("quit")) {
 			// Quit the application
 			System.exit(0);
+			// If the codes goes until here, system.exit failed
+			botChatbox.text = "Can't quit, failed";
+			return new Conservation(userChatbox, botChatbox);
 		} else {
 			// Take query of the given command / text
 			String[] commands = query.split(" ");
