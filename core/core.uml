@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_21FIIH0iEeynFtvtIKas0g" name="core">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_216OkH0iEeynFtvtIKas0g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_eMwjAH0sEeynFtvtIKas0g" name="KICycle" node="_asxYoH0tEeynFtvtIKas0g _xYtdsH0wEeynFtvtIKas0g _cVR1QH0yEeynFtvtIKas0g _y219sH0yEeynFtvtIKas0g _KSE5EH0zEeynFtvtIKas0g _R9fFkH0zEeynFtvtIKas0g _qT8TEH0zEeynFtvtIKas0g _UTL8MH00EeynFtvtIKas0g">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_24TWEH00EeynFtvtIKas0g">
+      <body>Don't use quit as defined commands,&#xD;
+as if there is a bug in the defined commands,&#xD;
+users could still quit.</body>
+    </ownedComment>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0DgQAH0wEeynFtvtIKas0g" target="_xYtdsH0wEeynFtvtIKas0g" source="_asxYoH0tEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cVi7AH0yEeynFtvtIKas0g" target="_cVR1QH0yEeynFtvtIKas0g" source="_xYtdsH0wEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_R97KcH0zEeynFtvtIKas0g" name="Yes" target="_R9fFkH0zEeynFtvtIKas0g" source="_KSE5EH0zEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hD7gQH0zEeynFtvtIKas0g" target="_cVR1QH0yEeynFtvtIKas0g" source="_R9fFkH0zEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qUaNIH0zEeynFtvtIKas0g" target="_qT8TEH0zEeynFtvtIKas0g" source="_KSE5EH0zEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wNHs8H0zEeynFtvtIKas0g" target="_cVR1QH0yEeynFtvtIKas0g" source="_qT8TEH0zEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UTrEYH00EeynFtvtIKas0g" target="_UTL8MH00EeynFtvtIKas0g" source="_cVR1QH0yEeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XVgdsH00EeynFtvtIKas0g" name="Yes" target="_y219sH0yEeynFtvtIKas0g" source="_UTL8MH00EeynFtvtIKas0g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z5lkAH00EeynFtvtIKas0g" name="No" target="_KSE5EH0zEeynFtvtIKas0g" source="_UTL8MH00EeynFtvtIKas0g"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_asxYoH0tEeynFtvtIKas0g" name="Init" outgoing="_0DgQAH0wEeynFtvtIKas0g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_xYtdsH0wEeynFtvtIKas0g" name="Show welcome message" incoming="_0DgQAH0wEeynFtvtIKas0g" outgoing="_cVi7AH0yEeynFtvtIKas0g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_cVR1QH0yEeynFtvtIKas0g" name="Wait for user input" incoming="_cVi7AH0yEeynFtvtIKas0g _hD7gQH0zEeynFtvtIKas0g _wNHs8H0zEeynFtvtIKas0g" outgoing="_UTrEYH00EeynFtvtIKas0g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_y219sH0yEeynFtvtIKas0g" name="Quit application" incoming="_XVgdsH00EeynFtvtIKas0g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_KSE5EH0zEeynFtvtIKas0g" name="Is defined command" incoming="_Z5lkAH00EeynFtvtIKas0g" outgoing="_R97KcH0zEeynFtvtIKas0g _qUaNIH0zEeynFtvtIKas0g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_R9fFkH0zEeynFtvtIKas0g" name="Execute command" incoming="_R97KcH0zEeynFtvtIKas0g" outgoing="_hD7gQH0zEeynFtvtIKas0g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qT8TEH0zEeynFtvtIKas0g" name="Do deep learning" incoming="_qUaNIH0zEeynFtvtIKas0g" outgoing="_wNHs8H0zEeynFtvtIKas0g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_UTL8MH00EeynFtvtIKas0g" name="Is quit" incoming="_UTrEYH00EeynFtvtIKas0g" outgoing="_XVgdsH00EeynFtvtIKas0g _Z5lkAH00EeynFtvtIKas0g"/>
+  </packagedElement>
+</uml:Model>
